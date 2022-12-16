@@ -7,7 +7,10 @@ body {
 }
 
 .Button {
-
+  padding: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Header {
@@ -18,6 +21,8 @@ body {
 }
 
 .Image {
+  display:flex;
+  align-items: center;
 }
 
 .Inputs {
