@@ -9,10 +9,12 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Input label="Top Text" />
-        <Input label="Bottom Text" />
-        <Button/>
-        <Image/>
+        <div className="Inputs">
+          <Input label="Top Text" />
+          <Input label="Bottom Text" />
+        </div>
+        <Button />
+        <Image />
       </div>
     );
   }
