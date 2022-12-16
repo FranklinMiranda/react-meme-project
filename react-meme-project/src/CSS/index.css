@@ -6,33 +6,45 @@ body {
 .App {
 }
 
+.Header {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+}
+
 .Button {
   padding: 20px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.Header {
-  padding: 20px;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Image {
-  display:flex;
-  align-items: center;
+.Button-1 {
+  background-color: blueviolet;
+  width: 25%
 }
 
 .Inputs {
   padding: 20px;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.Input{
+.Input {
   margin: 0px 20px;
+  background-color: antiquewhite;
+}
+
+.Input-Text{
+  width: 100%
+}
+
+.Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -5,7 +5,7 @@ class Input extends React.Component {
     return (
       <div className="Input">
         <h3>{this.props.label}</h3>
-        <input type="text" />
+        <input type="text" className='Input-Text'/>
       </div>
     );
   }

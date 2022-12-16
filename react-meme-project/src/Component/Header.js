@@ -4,8 +4,8 @@ class Header extends React.Component {
   render() {
     return (
       <div className="Header">
-        <h1>Header</h1>
-        <h2>Description</h2>
+        <h1>Meme Generator</h1>
+        <h2>React Project</h2>
       </div>
     );
   }

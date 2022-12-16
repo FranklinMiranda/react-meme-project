@@ -5,7 +5,7 @@ class Image extends React.Component {
         return (
             <div className='Image'>
                 <h3>Meme Image</h3>
-                <img/>
+                <img alt="Meme Image"/>
             </div>
         )
     }
