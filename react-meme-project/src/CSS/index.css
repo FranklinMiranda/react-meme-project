@@ -14,9 +14,14 @@ body {
   background-color: blueviolet;
 }
 
+.Form-Div{
+  background-color: antiquewhite;
+}
+
 
 .Image-Div {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aqua;
 }
