@@ -8,8 +8,7 @@ class App extends React.Component {
     return (
       <div className="App-Div">
         <Header />
-        <Form />
-        <Image />
+        <Meme />
       </div>
     );
   }
