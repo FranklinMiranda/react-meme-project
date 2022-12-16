@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Form from './Form';
-import Image from './Meme';
+import Meme from './Meme';
 
 class App extends React.Component {
   render() {
