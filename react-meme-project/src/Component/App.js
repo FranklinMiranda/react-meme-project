@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Input from './Input';
-import Button from './Button';
+import Form from './Form';
 import Image from './Image';
 
 class App extends React.Component {
@@ -9,11 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <div className="Inputs">
-          <Input label="Top Text" />
-          <Input label="Bottom Text" />
-        </div>
-        <Button />
+        <Form />
         <Image />
       </div>
     );
