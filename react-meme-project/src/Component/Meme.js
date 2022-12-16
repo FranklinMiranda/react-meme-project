@@ -12,13 +12,13 @@ class Meme extends React.Component {
     }
     return (
       <div className="Meme-Div">
-        <form className="Meme-Form">
+        <div className="Meme-Form">
           <input type="text" className="Meme-Input" placeholder="Top Text" />
           <input type="text" className="Meme-Input" placeholder="Bottom Text" />
           <button className="Meme-Button" onClick={handleClick}>
             Get a new meme image
           </button>
-        </form>
+        </div>
         <div className="Image-Div">
           <img></img>
         </div>
