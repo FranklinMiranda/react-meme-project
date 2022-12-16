@@ -6,7 +6,7 @@ import Image from './Image';
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="App-Div">
         <Header />
         <Form />
         <Image />
