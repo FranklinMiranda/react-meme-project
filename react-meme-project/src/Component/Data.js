@@ -6,7 +6,7 @@ const Data = () => {
 
   const fetchData = () => {
     return fetch('https://swapi.dev/api/people/1')
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((data) => setStarWarsData(data));
   };
 
