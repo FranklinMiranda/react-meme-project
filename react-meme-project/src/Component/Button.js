@@ -3,7 +3,7 @@ import React from 'react';
 class Button extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { ButtonStatus: True };
+    this.state = { ButtonStatus: true };
 
     // This Bind is require to have this in the handleClick Callback reference this in the ES6 class
     this.handleClick = this.handleClick.bind(this);
@@ -18,10 +18,10 @@ class Button extends React.Component {
   render() {
     return (
       <div className="Button">
-        <h1>{this.state.ButtonStatus ? 'ON' : 'OFF'}</h1>
+        <button onClick={this.handleClick}> {this.state.ButtonStatus ? 'ON' : 'OFF'}</button>
       </div>
     );
   }
 }
 
-export default Button
+export default Button;
