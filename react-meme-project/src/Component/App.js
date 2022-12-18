@@ -6,6 +6,7 @@ import Button from './Button';
 import Greeting from './ConditionalFunctional';
 import LoginControl from './CondtionalState';
 import Mailbox from './InlineConditional&&';
+import Page from './Page'
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];
 
@@ -21,6 +22,7 @@ class App extends React.Component {
         <Greeting isLoggedIn="True" />
         <LoginControl />
         <Mailbox unreadMessages={messages} />
+        <Page/>
       </div>
     );
   }

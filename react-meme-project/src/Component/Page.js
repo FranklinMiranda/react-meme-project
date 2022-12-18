@@ -1,5 +1,8 @@
 import React from 'react';
 
+// A inner component can be prevented from rendering in React using state object and event handlers. 
+// To prevent a component from rendering return null
+
 function WarningBanner(props) {
     if(!props.warn) {return null;}
 
