@@ -5,7 +5,7 @@ import Data from './Data';
 import Button from './Button';
 import Greeting from './ConditionalFunctional';
 import LoginControl from './CondtionalState';
-import Mailbox from './InlineConditional';
+import Mailbox from './InlineConditional&&';
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];
 
