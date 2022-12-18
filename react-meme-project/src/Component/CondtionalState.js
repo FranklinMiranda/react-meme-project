@@ -1,19 +1,19 @@
 import React from 'react';
 import Greeting from './ConditionalFunctional';
 
-const LoginButton = (props) => {
+function LoginButton(props) {
   return <button onClick={props.onClick}>Login</button>;
 };
 
-const LogoutButton = (props) => {
+function LogoutButton(props) {
   return <button onClick={props.onClick}>Logout</button>;
 };
 
 class LoginControl extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleLoginClick.bind(this);
-    this.handleClick = this.handleLogoutClick.bind(this);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleLogoutClick = this.handleLogoutClick.bind(this);
     this.state = { isLoggedIn: false };
   }
 
@@ -43,3 +43,5 @@ class LoginControl extends React.Component {
     );
   }
 }
+
+export default LoginControl

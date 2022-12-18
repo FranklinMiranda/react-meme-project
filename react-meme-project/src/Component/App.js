@@ -4,6 +4,7 @@ import Meme from './Meme';
 import Data from './Data'
 import Button from './Button'
 import Greeting from './ConditionalFunctional'
+import LoginControl from './CondtionalState';
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
         <Button/>
         <Greeting/>
         <Greeting isLoggedIn='True'/>
+        <LoginControl/>
       </div>
     );
   }
