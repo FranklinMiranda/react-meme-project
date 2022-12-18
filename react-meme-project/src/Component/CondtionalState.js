@@ -27,6 +27,7 @@ class LoginControl extends React.Component {
   }
 
   // Const isLoggedIn variable is setup to store the state property isLoggedIn to be used in the conditional rendering if statement
+  // If Statement can also be rewritten using a ternary operator but it is less readable 
   render() {
     const isLoggedIn = this.state.isLoggedIn;
     let button;
@@ -39,6 +40,7 @@ class LoginControl extends React.Component {
     return (
       <div className="LogInControl-Div">
         <Greeting isLoggedIn={isLoggedIn} />
+        <h1>The User is {isLoggedIn ? 'currently' : 'not'} logged in.</h1>
         {button}
       </div>
     );
