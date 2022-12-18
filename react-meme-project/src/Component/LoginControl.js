@@ -1,5 +1,5 @@
 import React from 'react';
-import Greeting from './ConditionalFunctional';
+import Greeting from './Greeting';
 
 function LoginButton(props) {
   return <button onClick={props.onClick}>Login</button>;
@@ -38,7 +38,7 @@ class LoginControl extends React.Component {
     }
 
     return (
-      <div className="LogInControl-Div">
+      <div className="LoginControl-Div">
         <Greeting isLoggedIn={isLoggedIn} />
         <h1>The User is {isLoggedIn ? 'currently' : 'not'} logged in.</h1>
         {button}

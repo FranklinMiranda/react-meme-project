@@ -48,6 +48,9 @@ body {
   margin: 20px 0px;
  }
 
-
- .Data-Div {
- }
+.Data-Div{background-color: aqua;}
+.Button-Div{background-color: blue;}
+.Greeting-Div{background-color: white ;}
+.Mailbox-Div{background-color:brown ;}
+.LoginControl-Div{background-color:cadetblue ;}
+.Page-Div{background-color:red ;}

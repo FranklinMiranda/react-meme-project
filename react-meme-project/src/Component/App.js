@@ -3,9 +3,9 @@ import Header from './Header';
 import Meme from './Meme';
 import Data from './Data';
 import Button from './Button';
-import Greeting from './ConditionalFunctional';
-import LoginControl from './CondtionalState';
-import Mailbox from './InlineConditional&&';
+import Greeting from './Greeting';
+import LoginControl from './LoginControl';
+import Mailbox from './Mailbox';
 import Page from './Page'
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];

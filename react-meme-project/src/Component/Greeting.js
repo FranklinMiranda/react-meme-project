@@ -11,9 +11,9 @@ const GuestGreeting = () => {
 const Greeting = (props) => {
   const isLoggedIn = props.isLoggedIn;
   if (isLoggedIn) {
-    return <UserGreeting />;
+    return <div className='Greeting-Div'><UserGreeting /></div>;
   }
-  return <GuestGreeting />;
+  return <div className='Greeting-Div'><GuestGreeting /></div>;
 };
 
 export default Greeting;
