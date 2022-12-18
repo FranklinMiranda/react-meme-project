@@ -3,7 +3,7 @@ import Header from './Header';
 import Meme from './Meme';
 import Data from './Data'
 import Button from './Button'
-import Greeting from './Conditional'
+import Greeting from './ConditionalFunctional'
 
 class App extends React.Component {
   render() {
