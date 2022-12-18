@@ -26,7 +26,7 @@ class LoginControl extends React.Component {
     this.setState({ isLoggedIn: false });
   }
 
-  // Const isLoggedIn variable is setup to use in conditional rendering if statement
+  // Const isLoggedIn variable is setup to store the state property isLoggedIn to be used in the conditional rendering if statement
   render() {
     const isLoggedIn = this.state.isLoggedIn;
     let button;
