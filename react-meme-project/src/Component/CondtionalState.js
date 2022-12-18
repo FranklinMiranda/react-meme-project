@@ -9,6 +9,7 @@ function LogoutButton(props) {
   return <button onClick={props.onClick}>Logout</button>;
 };
 
+// Stateful Component Example with Conditional Rendering 
 class LoginControl extends React.Component {
   constructor(props) {
     super(props);
