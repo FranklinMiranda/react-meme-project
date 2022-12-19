@@ -4,8 +4,8 @@ const names = ['Franklin', 'Frank', 'Lin', 'Anna', 'Dominic', 'Maria', 'Dominica
 
 class Users extends React.Component {
   render() {
-    const name = names.map((el) => {
-      return <li>{el}</li>;
+    const name = names.map((el, index) => {
+      return <li key={index}>{el}</li>;
     });
     return (
       <div className="Users">
