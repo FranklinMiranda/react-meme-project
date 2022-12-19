@@ -19,7 +19,7 @@ class App extends React.Component {
         <Data />
         <Button />
         <Greeting />
-        <Greeting isLoggedIn="True" />
+        <Greeting isLoggedIn={true}/>
         <LoginControl />
         <Mailbox unreadMessages={messages} />
         <Page/>
