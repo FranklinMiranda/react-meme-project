@@ -8,7 +8,10 @@ import LoginControl from './LoginControl';
 import Mailbox from './Mailbox';
 import Page from './Page'
 import Users from './Users'
+
 const messages = ['React', 'Re:React', 'Re:Re: React'];
+const names = ['Franklin', 'Frank', 'Lin', 'Anna', 'Dominic', 'Maria', 'Dominica'];
+
 
 class App extends React.Component {
   render() {
@@ -23,7 +26,7 @@ class App extends React.Component {
         <LoginControl />
         <Mailbox unreadMessages={messages} />
         <Page/>
-        <Users/>
+        <Users />
       </div>
     );
   }
