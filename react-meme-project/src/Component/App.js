@@ -6,12 +6,15 @@ import Button from './Button';
 import Greeting from './Greeting';
 import LoginControl from './LoginControl';
 import Mailbox from './Mailbox';
-import Page from './Page'
-import Users from './Users'
+import Page from './Page';
+import Users from './Users';
+import Blog from './Blog';
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];
-const names = ['Franklin', 'Frank', 'Lin', 'Anna', 'Dominic', 'Maria', 'Dominica'];
-
+const posts = [
+  { id: 1, title: 'Hello World', content: 'Welcome to learning React!' },
+  { id: 2, title: 'Installation', content: 'You can install React from npm.' },
+];
 
 class App extends React.Component {
   render() {
@@ -22,11 +25,12 @@ class App extends React.Component {
         <Data />
         <Button />
         <Greeting />
-        <Greeting isLoggedIn={true}/>
+        <Greeting isLoggedIn={true} />
         <LoginControl />
         <Mailbox unreadMessages={messages} />
-        <Page/>
+        <Page />
         <Users />
+        <Blog posts={posts} />
       </div>
     );
   }

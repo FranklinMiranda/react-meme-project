@@ -13,7 +13,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  color: white
+  color: white;
 }
 
 .Meme-Div {
@@ -43,14 +43,32 @@ body {
   cursor: pointer;
 }
 
- .Image-Div{
+.Image-Div {
   background-color: antiquewhite;
   margin: 20px 0px;
- }
+}
 
-.Data-Div{background-color: aqua;}
-.Button-Div{background-color: blue;}
-.Greeting-Div{background-color: white ;}
-.Mailbox-Div{background-color:brown ;}
-.LoginControl-Div{background-color:cadetblue ;}
-.Page-Div{background-color:red ;}
+.Data-Div {
+  background-color: aqua;
+}
+.Button-Div {
+  background-color: blue;
+}
+.Greeting-Div {
+  background-color: white;
+}
+.Mailbox-Div {
+  background-color: brown;
+}
+.LoginControl-Div {
+  background-color: cadetblue;
+}
+.Page-Div {
+  background-color: red;
+}
+.Users-Div {
+  background-color: Blue;
+}
+.Blog-Div {
+  background-color: red;
+}

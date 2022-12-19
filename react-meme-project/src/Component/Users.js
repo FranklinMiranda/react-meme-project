@@ -8,7 +8,7 @@ class Users extends React.Component {
       return <li key={index}>{el}</li>;
     });
     return (
-      <div className="Users">
+      <div className="Users-Div">
         <h1>Users:</h1>
         <ul>{name}</ul>
       </div>

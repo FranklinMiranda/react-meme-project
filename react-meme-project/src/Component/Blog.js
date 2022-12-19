@@ -16,6 +16,7 @@ function Blog(props) {
   });
   return (
     <div className="Blog-Div">
+      <h1>Blog</h1>
       {sidebar}
       <hr />
       {content}
