@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Essay extends React.Component {
+class EssayForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: 'Please write an essay about your favorite DOM element.' };
@@ -30,3 +30,5 @@ class Essay extends React.Component {
     );
   }
 }
+
+export default EssayForm
