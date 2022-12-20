@@ -9,6 +9,7 @@ import Mailbox from './Mailbox';
 import Page from './Page';
 import Users from './Users';
 import Blog from './Blog';
+import NameForm from './ControlledForm';
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];
 const posts = [
@@ -31,6 +32,7 @@ class App extends React.Component {
         <Page />
         <Users />
         <Blog posts={posts} />
+        <NameForm/>
       </div>
     );
   }
