@@ -17,7 +17,7 @@ class FlavorForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('Your favorite flavor is:' + this.state.value);
+    alert('Your favorite flavor is: ' + this.state.value);
     event.preventDefault();
   }
 
@@ -39,3 +39,4 @@ class FlavorForm extends React.Component {
   }
 }
 
+export default FlavorForm

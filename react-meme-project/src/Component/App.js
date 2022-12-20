@@ -11,6 +11,7 @@ import Users from './Users';
 import Blog from './Blog';
 import NameForm from './NameForm';
 import EssayForm from './EssayForm';
+import FlavorForm from './FlavorForm'
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];
 const posts = [
@@ -35,6 +36,7 @@ class App extends React.Component {
         <Blog posts={posts} />
         <NameForm/>
         <EssayForm/>
+        <FlavorForm/>
       </div>
     );
   }
