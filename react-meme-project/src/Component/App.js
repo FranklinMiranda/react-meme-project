@@ -9,7 +9,7 @@ import Mailbox from './Mailbox';
 import Page from './Page';
 import Users from './Users';
 import Blog from './Blog';
-import NameForm from './ControlledForm';
+import NameForm from './NameForm';
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];
 const posts = [
