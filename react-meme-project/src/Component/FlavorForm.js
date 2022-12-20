@@ -38,3 +38,4 @@ class FlavorForm extends React.Component {
     );
   }
 }
+
