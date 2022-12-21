@@ -9,10 +9,12 @@ class Reservations extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
+  // Declare Target and Name variables to simplify using them in the event handler inside
   handleInputChange(event) {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
+
+    const value = target.type === 'checkbox' ? target.checked : target.value;
 
     this.setState({ [name]: value });
   }
@@ -34,4 +36,4 @@ class Reservations extends React.Component {
   }
 }
 
-export default Reservations
+export default Reservations;
