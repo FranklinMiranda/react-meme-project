@@ -69,6 +69,7 @@ class Calculator extends React.Component {
     this.setState({ scale: 'f', temperature });
   }
 
+  // When a state change occurs the entire render method is triggered and the component is rerendered
   render() {
     const scale = this.state.scale;
     const temperature = this.state.temperature;
