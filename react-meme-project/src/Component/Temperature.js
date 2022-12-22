@@ -9,6 +9,13 @@ function BoilingVerdict(props) {
 
 const scaleNames = { c: 'Celsius', f: 'Fahrenheit' };
 
+function toCelsius(fahrenheit) {
+  return ((fahrenheit - 32) * 5) / 9;
+}
+function toFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
+
 class TemperatureInput extends React.Component {
   constructor(props) {
     super(props);
@@ -33,15 +40,14 @@ class TemperatureInput extends React.Component {
 }
 
 class Calculator extends React.Component {
-    render() {
+  render() {
     return (
-      <div className='Calculator'>
-        <TemperatureInput scale='c'/>
-        <TemperatureInput scale='f'/>
+      <div className="Calculator">
+        <TemperatureInput scale="c" />
+        <TemperatureInput scale="f" />
       </div>
     );
   }
 }
 
-
-export default Calculator
+export default Calculator;
