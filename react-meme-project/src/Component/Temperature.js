@@ -1,5 +1,8 @@
 import React from 'react';
 
+//This component shows an example of how to lift state up to the closest common ancestor component to create a single source of truth for state
+// This is useful when two different components need to maintain their state in sync
+
 function BoilingVerdict(props) {
   if (props.celsius >= 100) {
     return <p>The water would boil.</p>;
@@ -29,16 +32,18 @@ function tryConvert(temperature, convert) {
 class TemperatureInput extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { temperature: '' };
+    // We remove the state object from the TemperatureInput Before: this.state = { temperature: '' };
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    this.setState({ temperature: event.target.value });
+    // Before:  this.setState({ temperature: event.target.value });
+    this.props.onTemperatureChange(event.target.value);
   }
 
   render() {
-    const temperature = this.state.temperature;
+    // Before: const temperature = this.state.temperature
+    const temperature = this.props.temperature;
     const scale = this.props.scale;
     return (
       <fieldset>
@@ -50,11 +55,32 @@ class TemperatureInput extends React.Component {
 }
 
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { temperature: '37', scale: 'c' };
+    this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
+    this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
+  }
+
+  handleCelsiusChange(temperature) {
+    this.setState({ scale: 'c', temperature });
+  }
+  handleFahrenheitChange(temperature) {
+    this.setState({ scale: 'f', temperature });
+  }
+
   render() {
+    const scale = this.state.scale;
+    const temperature = this.state.temperature;
+    const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
+    const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
+
+
     return (
       <div className="Calculator">
-        <TemperatureInput scale="c" />
-        <TemperatureInput scale="f" />
+        <TemperatureInput scale="c" temperature={celsius} onTemperatureChange={this.handleCelsiusChange}/>
+        <TemperatureInput scale="f" temperature={fahrenheit} onTemperatureChange={this.handleFahrenheitChange}/>
+        <BoilingVerdict celsius={parseFloat(celsius)}/>
       </div>
     );
   }
