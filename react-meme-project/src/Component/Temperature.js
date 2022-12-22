@@ -16,8 +16,8 @@ class TemperatureInput extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(e) {
-    this.setState({ temperature: e.target.value });
+  handleChange(event) {
+    this.setState({ temperature: event.target.value });
   }
 
   render() {
@@ -42,3 +42,6 @@ class Calculator extends React.Component {
     );
   }
 }
+
+
+export default Calculator
