@@ -25,4 +25,4 @@ function WelcomeDialog(){
     )
 }
 
-export default WelcomeDialog
+export {WelcomeDialog, FancyBorder}
