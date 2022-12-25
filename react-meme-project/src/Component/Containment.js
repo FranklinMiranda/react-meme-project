@@ -1,4 +1,8 @@
 // props.children can be used to pass a component's children elements directly to its output
+// You can also use your own naming convention to pass children elements directly into holes left in other parent elements
+// Such as props.right or props.left
+
+
 
 function FancyBorder(props){
     return (
