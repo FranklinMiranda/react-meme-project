@@ -16,6 +16,7 @@ import Reservations from './Reservations';
 import Calculator from './Temperature';
 import WelcomeDialog from './Containment';
 import Pane from './SplitPane';
+import SignUpDialog from './Specilization';
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];
 const posts = [
@@ -45,6 +46,7 @@ class App extends React.Component {
         <Calculator/>
         <WelcomeDialog/>
         <Pane/>
+        <SignUpDialog/>
       </div>
     );
   }
