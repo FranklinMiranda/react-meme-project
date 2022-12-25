@@ -4,7 +4,7 @@
 
 
 
-export function FancyBorder(props){
+function FancyBorder(props){
     return (
         <div className={'FancyBorder FancyBorder-' + props.color}>
             {props.children}
@@ -25,4 +25,4 @@ function WelcomeDialog(){
     )
 }
 
-export default WelcomeDialog
+export { WelcomeDialog, FancyBorder};

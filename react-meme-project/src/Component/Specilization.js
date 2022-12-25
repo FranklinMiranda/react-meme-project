@@ -1,6 +1,6 @@
 // Specialization is when a more generic component is rendered as a specific component using props
 import React from 'react';
-import FancyBorder from './Containment';
+import {FancyBorder} from './Containment';
 
 function Dialog(props) {
   return (

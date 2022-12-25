@@ -14,7 +14,7 @@ import EssayForm from './EssayForm';
 import FlavorForm from './FlavorForm'
 import Reservations from './Reservations';
 import Calculator from './Temperature';
-import WelcomeDialog from './Containment';
+import {WelcomeDialog} from './Containment';
 import Pane from './SplitPane';
 import SignUpDialog from './Specilization';
 
