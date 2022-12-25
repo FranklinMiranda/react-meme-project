@@ -14,6 +14,7 @@ import EssayForm from './EssayForm';
 import FlavorForm from './FlavorForm'
 import Reservations from './Reservations';
 import Calculator from './Temperature';
+import WelcomeDialog from './Containment';
 
 const messages = ['React', 'Re:React', 'Re:Re: React'];
 const posts = [
@@ -41,6 +42,7 @@ class App extends React.Component {
         <FlavorForm/>
         <Reservations/>
         <Calculator/>
+        <WelcomeDialog/>
       </div>
     );
   }
