@@ -1,5 +1,5 @@
 // Custom conventions can be used to pass components into holes left in parent components
-// SUch are props.left and props.right
+// Such are props.left and props.right
 
 const left = <h1>Left</h1>;
 
